@@ -26,3 +26,7 @@ parser = argparse.ArgumentParser(description='Manage rules')
 parser.add_argument('-c', '--count', 
                      metavar='count', action='count', 
                      required=True, add_help=True)
+
+parser.add_argument('-fc', '--failed-count', 
+                     action='store', 
+                     required=True) 
