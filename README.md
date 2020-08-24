@@ -1,4 +1,4 @@
-# DEBUGGING 
+# PYTHON TASK 
 
 A python script which wraps a command( say example : "ping" ) in our case and does the following things -
 
