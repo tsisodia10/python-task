@@ -31,6 +31,7 @@ parser.add_argument('-fc', '--failed-count',
                      action='store', 
                      required=True) 
 
+
 args = parser.parse_args()
 
 #add rules ---- check if count is valid
@@ -45,7 +46,9 @@ if (args.count>1):
           # --- Success tracing
           print("Tracing Successful execution --------------------------------------------------------\n")
           pingParsing = os.system(f'pingparsing google.com -c {args.count}')
+          debug = os.system(f'ping -c {args.count} -d google.com ')
           print(pingParsing)
+          print(debug)
       else: 
           # --- while failed count is less than 2, it will execute till condition become false
           while args.failed >= 2:
